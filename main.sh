@@ -3,6 +3,7 @@
 BASE="$HOME/EPNro1"
 SALIDA="$BASE/salida/${FILENAME}.txt"
 
+# Manejo del parámetro optativo -d
 if [ "$1" == "-d" ]; then
     echo "Borrando entorno y deteniendo procesos..."
     pkill -f "consolidar.sh"
@@ -10,6 +11,7 @@ if [ "$1" == "-d" ]; then
     exit 0
 fi
 
+# funciones del Menú 
 while true; do
     echo -e "\n--- MENÚ DE OPERACIONES ---"
     echo "1) Crear entorno"
