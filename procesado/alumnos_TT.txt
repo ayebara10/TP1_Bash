@@ -1,0 +1,5 @@
+122435 Lucia Fernandez lfernandez@fi.uba.ar 8
+98765 Martin Rojas mrojas@fi.uba.ar 6
+110034 Sofia Herrera sherrera@fi.uba.ar 3
+134567 Diego Morales dmorales@fi.uba.ar 9
+87654 Valentina Cruz vcruz@fi.uba.ar 10
