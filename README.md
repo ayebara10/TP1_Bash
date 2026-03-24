@@ -46,6 +46,6 @@ bash main.sh
 # 6- Usar opciones 3, 4 ó 5 para consultar los datos de los alumnos
 # 7- Usar la opción 6 para salir
 
-# 8- Eliminar el entorno creado y inalizar el porceso en background (consolidar.sh)
+# 8- Eliminar el entorno creado y finalizar el porceso en background (consolidar.sh)
 bash main.sh -d
 ```
