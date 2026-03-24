@@ -29,6 +29,7 @@ while true; do
             echo "Entorno EPNro1 creado con éxito." ;;
             
         2) # Correr en background
+            export FILENAME
             bash "$BASE/consolidar.sh" &
             echo "Proceso de consolidación iniciado (PID: $!)." ;;
             
@@ -42,11 +43,17 @@ while true; do
         4) # Top 10 notas (Columna 4, numérica, reversa) [cite: 15, 21]
             if [ -f "$SALIDA" ]; then
                 sort -nr -k5 "$SALIDA" | head -n 10
+            else
+                echo "El archivo $FILENAME.txt no existe aún."
             fi ;;
             
         5) # Buscar por padrón [cite: 16]
-            read -p "Ingrese el padrón a buscar: " padron
-            grep "^$padron " "$SALIDA" || echo "Padrón no encontrado." ;;
+            if [ -f "$SALIDA" ]; then
+                read -p "Ingrese el padrón a buscar: " padron
+                grep "^$padron " "$SALIDA" || echo "Padrón no encontrado."
+            else
+                echo "El archivo $FILENAME.txt no existe aún."
+            fi ;;
             
         6) echo "¡Adiós!"; exit 0 ;;
         *) echo "Opción no válida." ;;

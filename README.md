@@ -44,5 +44,8 @@ bash main.sh
 # 4- Copiar archivos .txt de alumnos a ~/EPNro1/entrada
 # 5- Seleccioar opción 2 para iniciar el proceso en background
 # 6- Usar opciones 3, 4 ó 5 para consultar los datos de los alumnos
-# 7- Usar la opción 6 para elemininar el entorno y finalizar el porceso en background (consolidar.sh)
+# 7- Usar la opción 6 para salir
+
+# 8- Eliminar el entorno creado y inalizar el porceso en background (consolidar.sh)
+bash main.sh -d
 ```
