@@ -41,7 +41,7 @@ while true; do
             
         4) # Top 10 notas (Columna 4, numérica, reversa) [cite: 15, 21]
             if [ -f "$SALIDA" ]; then
-                sort -nr -k4 "$SALIDA" | head -n 10
+                sort -nr -k5 "$SALIDA" | head -n 10
             fi ;;
             
         5) # Buscar por padrón [cite: 16]
