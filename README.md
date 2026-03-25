@@ -1,6 +1,7 @@
 # Ejercicio Práctico Bash - Gestión de Alumnos
 
 ## Integrantes del grupo
+Shirley Antezana, Emilce Arroyo y Abril Yebara
 
 ## Descripción
 Script Bash con menú interactivo para la gestión de archivos de alumnos.
