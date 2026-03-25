@@ -35,6 +35,7 @@ while true; do
             
         3) # Ordenar por padrón (Columna 1) [cite: 14, 21]
             if [ -f "$SALIDA" ]; then
+                echo -e "\n--- ALUMNOS ORDENADOS POR PADRÓN---"
                 sort -n -k1 "$SALIDA"
             else
                 echo "El archivo $FILENAME.txt no existe aún."
@@ -42,6 +43,7 @@ while true; do
             
         4) # Top 10 notas (Columna 4, numérica, reversa) [cite: 15, 21]
             if [ -f "$SALIDA" ]; then
+                echo -e "\n--- TOP 10 NOTAS ---"
                 sort -nr -k5 "$SALIDA" | head -n 10
             else
                 echo "El archivo $FILENAME.txt no existe aún."
@@ -49,6 +51,7 @@ while true; do
             
         5) # Buscar por padrón [cite: 16]
             if [ -f "$SALIDA" ]; then
+                echo -e "\n--- BUSCAR POR PADRÓN ---"
                 read -p "Ingrese el padrón a buscar: " padron
                 grep "^$padron " "$SALIDA" || echo "Padrón no encontrado."
             else
